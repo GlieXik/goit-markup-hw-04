@@ -39,6 +39,7 @@ section {
 }
 .flex {
   display: flex;
+  align-items: baseline;
 }
 
 .container {
@@ -113,10 +114,17 @@ section {
   color: var(--text-color);
   display: flex;
 }
-.icon-mail,
-.icon-tel {
+.icon-mail {
   width: 16px;
   height: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+.icon-tel {
+  width: 12px;
+  height: 16px;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 10px;
@@ -126,6 +134,12 @@ section {
   fill: var(--brend-color);
 }
 .nav-link-item:hover .icon-tel {
+  fill: var(--brend-color);
+}
+.nav-link-item:focus .icon-mail {
+  fill: var(--brend-color);
+}
+.nav-link-item:focus .icon-tel {
   fill: var(--brend-color);
 }
 
@@ -207,7 +221,7 @@ section {
   background-color: #f5f4fa;
 
   border-radius: 4px;
-  width: 270px;
+
   height: 120px;
   display: flex;
   justify-content: center;
@@ -287,6 +301,7 @@ section {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
 .team-item:nth-child(4n) {
   margin-right: 0;
@@ -307,9 +322,9 @@ section {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .team-job {
-  margin-top: 10px;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -365,7 +380,7 @@ section {
 .customers-container-link {
   width: 170px;
   height: 92px;
-  margin-right: 30px;
+
   border-radius: 4px;
   border: 1px solid #afb1b8;
   display: flex;
@@ -377,6 +392,7 @@ section {
   display: flex;
 }
 .customers-container {
+  margin-right: 30px;
 }
 .customers-container-link:hover,
 .customers-container-link:focus {
@@ -541,10 +557,18 @@ section {
 
   margin-bottom: 30px;
 }
-.section-item:hover {
+.section-item-link {
+  display: block;
+}
+.section-item-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.section-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .section-item:nth-child(3n) {
   margin-right: 0px;
 }
