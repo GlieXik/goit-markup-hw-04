@@ -100,6 +100,7 @@ section {
 .nav-link-item:focus {
   color: var(--brend-color);
 }
+
 .nav-info {
   display: flex;
   margin-left: auto;
